@@ -13,4 +13,5 @@ The document also provides multi-card parallel code, employing a data-parallel s
 
 The datasets used are the Amazon datasets and the Pantry public datasets.
 
-The code references VQRec and Recbolel2.0.
+
+The code references VQRec and Recbole2.0.
