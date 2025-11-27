@@ -1,0 +1,23 @@
+data_path: 'dataset/or-pantry/'  
+pq_data: OP
+benchmark_filename: [train, valid, test] 
+alias_of_item_id: [item_id_list]
+load_col:
+  inter: [user_id, item_id_list, item_id] 
+
+test_batch_size: 1024  
+topk: [10, 30, 50] 
+metrics: [Recall, NDCG]  
+device: 'cuda:1,2,3' 
+
+pretrained_model_path: 'save_OP/RPQRec-Aug-11-2024_21-44-22.pth'  
+
+eval_setting: TO_LS, full 
+stopping_step: 10 
+
+log_file: 'logs/test.log' 
+result_file: 'results/test_result.csv' 
+
+index_path: dataset/or-pantry 
+index_pretrain_dataset: O
+filter_id_suffix: filtered_id
