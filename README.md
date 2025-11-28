@@ -2,7 +2,7 @@
 This is the source code and data for paper "Privacy-preserving Cross-domain Recommendation Enhanced with Large Language Model".
 
 The following steps are to run the model.
-1. python all_pq.py --gpu_id 
+1. python RPQ.py --gpu_id 
 2. python fed_pretrain
 3. python single_train.py --d= --p=......pth
 4. python prompt_finetune.py --d= --p=your_pretrained_model.pth
@@ -15,3 +15,4 @@ The datasets used are the Amazon datasets and the Pantry public datasets.
 
 
 The code references VQRec and Recbole2.0.
+
